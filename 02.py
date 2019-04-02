@@ -17,3 +17,5 @@ for d in range(2):
 
 print("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-")
 print(g.V(sydneyVertexId).outE('route').outV().values('desc').next())
+print(g.V().has('region', 'AU-NSW').outE('route').fold().next())
+
